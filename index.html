@@ -8,179 +8,44 @@
   <meta name="author" content="K-Baron Woodlot Team">
   <title>K-Baron Woodlot - Quality Construction Materials & Services</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Arial', 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #f5e8c7, #fff);
-      color: #2c2c2c;
-      line-height: 1.6;
-    }
-
-    header {
-      background: linear-gradient(to right, #d35400, #e67e22);
-      padding: 40px 20px;
-      text-align: center;
-      color: #fff;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-
-    header h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-    }
-
-    header p {
-      font-size: 1.2em;
-      font-style: italic;
-      opacity: 0.9;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 30px auto;
-      padding: 0 20px;
-    }
-
-    .contact {
-      background: #fff;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-      margin-bottom: 30px;
-    }
-
-    .contact h3 {
-      color: #d35400;
-      margin-bottom: 15px;
-      font-size: 1.5em;
-    }
-
-    .contact p {
-      font-size: 1.1em;
-      margin: 10px 0;
-    }
-
-    .contact a {
-      color: #2980b9;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
-
-    .contact a:hover {
-      color: #1a5276;
-    }
-
-    .services {
-      background: #fff;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-      margin-bottom: 30px;
-    }
-
-    .services h2 {
-      color: #d35400;
-      margin-bottom: 20px;
-      font-size: 1.8em;
-    }
-
-    .services ul {
-      list-style-type: disc;
-      padding-left: 20px;
-    }
-
-    .services li {
-      margin: 10px 0;
-      font-size: 1.1em;
-    }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      margin-bottom: 30px;
-    }
-
-    .gallery img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 12px;
-      transition: transform 0.3s;
-    }
-
-    .gallery img:hover {
-      transform: scale(1.05);
-    }
-
-    .videos {
-      background: #fff;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-    }
-
-    .videos h2 {
-      color: #d35400;
-      margin-bottom: 20px;
-      font-size: 1.8em;
-    }
-
-    .videos p {
-      margin-bottom: 20px;
-      font-size: 1.1em;
-    }
-
-    .video-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-    }
-
-    .video-item video {
-      width: 100%;
-      height: 200px;
-      border-radius: 12px;
-      object-fit: cover;
-    }
-
-    .video-item h4 {
-      margin: 10px 0;
-      font-size: 1.1em;
-      color: #2c2c2c;
-    }
-
-    footer {
-      background: #2c2c2c;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-
-    footer p {
-      font-size: 0.9em;
-    }
-
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2em;
-      }
-      .gallery img, .video-item video {
-        height: 150px;
-      }
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Arial', 'Segoe UI', sans-serif; background: linear-gradient(135deg, #f5e8c7, #fff); color: #2c2c2c; line-height: 1.6; }
+    header { background: linear-gradient(to right, #d35400, #e67e22); padding: 40px 20px; text-align: center; color: #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+    header img { max-width: 100%; height: auto; }
+    header h1 { font-size: 2.5em; margin: 10px 0; text-transform: uppercase; letter-spacing: 2px; }
+    header p { font-size: 1.2em; font-style: italic; opacity: 0.9; }
+    .container { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+    .contact { background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 6px 15px rgba(0,0,0,0.08); margin-bottom: 30px; }
+    .contact h3 { color: #d35400; margin-bottom: 15px; font-size: 1.5em; }
+    .contact p { font-size: 1.1em; margin: 10px 0; }
+    .contact a { color: #2980b9; text-decoration: none; transition: color 0.3s; }
+    .contact a:hover { color: #1a5276; }
+    .services { background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 6px 15px rgba(0,0,0,0.08); margin-bottom: 30px; }
+    .services h2 { color: #d35400; margin-bottom: 20px; font-size: 1.8em; }
+    .services ul { list-style-type: disc; padding-left: 20px; }
+    .services li { margin: 10px 0; font-size: 1.1em; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 30px; }
+    .gallery img { width: 100%; height: 200px; object-fit: cover; border-radius: 12px; transition: transform 0.3s; }
+    .gallery img:hover { transform: scale(1.05); }
+    .testimonials { background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 6px 15px rgba(0,0,0,0.08); margin-bottom: 30px; }
+    .testimonials h2 { color: #d35400; margin-bottom: 20px; font-size: 1.8em; }
+    .testimonial-item { margin: 15px 0; padding: 15px; background: #f9f9f9; border-radius: 8px; }
+    .testimonial-item p { font-style: italic; color: #555; }
+    .testimonial-item span { display: block; margin-top: 10px; font-weight: bold; color: #2c2c2c; }
+    .videos { background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 6px 15px rgba(0,0,0,0.08); }
+    .videos h2 { color: #d35400; margin-bottom: 20px; font-size: 1.8em; }
+    .videos p { margin-bottom: 20px; font-size: 1.1em; }
+    .video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+    .video-item video { width: 100%; height: 200px; border-radius: 12px; object-fit: cover; }
+    .video-item h4 { margin: 10px 0; font-size: 1.1em; color: #2c2c2c; }
+    footer { background: #2c2c2c; color: #fff; text-align: center; padding: 20px; margin-top: 40px; }
+    footer p { font-size: 0.9em; }
+    @media (max-width: 768px) { header h1 { font-size: 1.8em; } .gallery img, .video-item video { height: 150px; } }
   </style>
 </head>
 <body>
   <header>
+    <img src="/mnt/data/C5CD8B19-CA2C-4257-A650-8DDDC19B36CD.jpeg" alt="K-Baron Woodlot Logo" style="max-height: 250px;">
     <h1>K-Baron Woodlot</h1>
     <p>Dealers in Premium Construction Wood Products, Plywood, Roofing Sheets, Nails, & More</p>
   </header>
@@ -216,6 +81,22 @@
       <img src="images/nails.jpg" alt="Nails Collection">
     </div>
 
+    <div class="testimonials">
+      <h2>⭐ Customer Testimonials</h2>
+      <div class="testimonial-item">
+        <p>"The plywood and roofing sheets from K-Baron Woodlot transformed my home project. Delivery was lightning-fast, and the quality is unmatched!"</p>
+        <span>- Ama Mensah</span>
+      </div>
+      <div class="testimonial-item">
+        <p>"Their skilled team built my house with precision. The locks and hardware are top-notch—highly recommend!"</p>
+        <span>- Kwame Adjei</span>
+      </div>
+      <div class="testimonial-item">
+        <p>"I was impressed by the variety of nails and timber. Excellent service and friendly staff!"</p>
+        <span>- Nana Yaa</span>
+      </div>
+    </div>
+
     <div class="videos">
       <h2>🎥 Video Testimonials & Project Highlights</h2>
       <p>Explore how K-Baron Woodlot transforms homes with our top-tier materials and craftsmanship.</p>
@@ -234,28 +115,6 @@
           </video>
           <h4>Project 2 - Roofing Installation</h4>
         </div>
-        <div class="video-item">
-          <video controls>
-            <source src="videos/testimonial3.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <h4>Testimonial 3 - Customer Feedback</h4>
-        </div>
-        <div class="video-item">
-          <video controls>
-            <source src="videos/project4.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <h4>Project 4 - Timber Framing</h4>
-        </div>
-        <div class="video-item">
-          <video controls>
-            <source src="videos/testimonial5.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <h4>Testimonial 5 - Quality Assurance</h4>
-        </div>
-        <!-- Add more video items as needed for 10+ videos -->
       </div>
     </div>
   </div>
